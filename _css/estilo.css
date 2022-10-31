@@ -1,4 +1,32 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+@font-face {
+    font-family: 'FonteCorpo';
+    src: url('../_fonts/computer-font.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+body{
+    background-color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: #606060;
+    text-decoration: none;
+}
+
+div#interface {
+    width: 85%;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
 
 p{
     text-align: justify;
@@ -30,28 +58,205 @@ figure.foto-legenda:hover figcaption{
     opacity: 1;
 }
 
+header#cabecalho img#foto-oculos{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background-image: url(../_imagens/glass-logo-peq.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 80px;
+
+}
+
+header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2{
+    font-size: 15pt;
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    margin-top: 0px;
+}
+
 nav#menu{
     display: block;
+
 }
 
 nav#menu ul{
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    top:-20px;
-    right: 0px;
+    top:-10px;
+    right: 8%;
 
 }
 nav#menu li{
+    border-radius: 25px;
     display: inline-block;
     background-color: lightgray;
     padding: 10px;
     margin: 2;
+    transition: background-color 0.3s;
     
 }
+
+nav#menu li:hover{
+    background-color:darkgray;
+    
+}
+
 nav#menu a{
     color: black;
+    text-decoration: none;
 }
+
+nav#menu a:hover{
+    color: white;
+}
+
+
 nav#menu h1{
     display: none;
 }
+
+
+section#corpo{
+    display: block;
+    width: 750px;
+    border-right: 1px solid #606060;
+    float: left;
+    padding-right: 10px;
+}
+
+
+article#noticia_pricipal h2{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+header#cab_art h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+header#cab_art h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+header#cab_art h3{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #606060;
+}
+.direita {
+    text-align: right;
+}
+
+aside#lateral{
+    display: block;
+    width: 500px;
+    float: right;
+    padding-right: 5px;
+    background-color: #cdcdcd;
+    border-radius: 25px; 
+    margin: 20px 0px 0px 0px;
+    
+}
+
+
+aside#lateral h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    padding: 0px 10px 0px 10px;
+
+    
+}
+aside#lateral h2{
+    font-size: 15px;
+    background-color: #606060;
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-left: 5px;
+    
+}
+
+aside#lateral p{
+    padding: 0px 10px 0px 10px;
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p{
+    text-align: center;
+}
+
+table#tabela{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #cecece;
+
+    
+}
+
+table#tabela td{
+    border: 1px solid #606060;
+    padding: 10px;
+    
+}
+
+table#tabela td.titulo{
+    color: white;
+    background-color: #606060;
+    font-weight: bold;
+    vertical-align: top;
+}
+table#tabela td.item{
+    background-color: #cecece;
+}
+
+table#tabela caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+    text-align: center;
+}
+
+table#tabela caption span{
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
